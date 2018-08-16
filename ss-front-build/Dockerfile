@@ -11,6 +11,7 @@ RUN \
   rm -rf /var/cache/oracle-jdk8-installer
 
 # install apache 8.0.33
+RUN mkdir -p /opt/sensen
 ADD https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz /opt/sensen
 
 # install postgres && postgis
