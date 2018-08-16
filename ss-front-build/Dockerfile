@@ -11,6 +11,7 @@ RUN \
   rm -rf /var/cache/oracle-jdk8-installer
 
 # install postgres && postgis
+RUN apt-get update
 RUN apt-get install -y postgresql-9.5 postgresql-contrib-9.5 postgresql-9.5-postgis-2.2
 
 # debuild stuff
