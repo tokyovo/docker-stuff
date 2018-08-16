@@ -11,7 +11,7 @@ RUN \
   rm -rf /var/cache/oracle-jdk8-installer
 
 # install postgres && postgis
-RUN apt-get install -y postgresql-9.3
+RUN apt-get install -y postgresql-9.5 postgresql-contrib-9.5 postgresql-9.5-postgis-2.2
 
 # debuild stuff
 RUN apt-get install -y devscripts build-essential lintian ant 
