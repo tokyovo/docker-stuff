@@ -15,7 +15,7 @@ RUN apt-get update
 RUN apt-get install -y postgresql-9.5 postgresql-contrib-9.5 postgresql-9.5-postgis-2.2
 
 # debuild stuff
-RUN apt-get install -y devscripts build-essential lintian ant 
+RUN apt-get install -y dh-make devscripts build-essential lintian ant debhelper
 
 
 # Define working directory.
