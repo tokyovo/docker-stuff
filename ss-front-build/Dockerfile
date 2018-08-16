@@ -13,6 +13,7 @@ RUN \
 # install apache 8.0.33
 RUN mkdir -p /opt/sensen
 ADD https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz /opt/sensen
+RUN tar -xvf /opt/sensen/apache-tomcat-8.0.33.tar.gz -C /opt/sensen
 
 # install postgres && postgis
 RUN apt-get update
